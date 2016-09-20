@@ -10,6 +10,14 @@
 		32D3DAB71D91846C00FFB188 /* sorting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D3DAAD1D91846B00FFB188 /* sorting.framework */; };
 		32D3DABC1D91846C00FFB188 /* sortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3DABB1D91846C00FFB188 /* sortingTests.swift */; };
 		32D3DABE1D91846C00FFB188 /* sorting.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D3DAB01D91846B00FFB188 /* sorting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32EF76D71D9188360055DF35 /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76D61D9188360055DF35 /* Insertion.swift */; };
+		32EF76D91D91883D0055DF35 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76D81D91883D0055DF35 /* Selection.swift */; };
+		32EF76DB1D9188460055DF35 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76DA1D9188460055DF35 /* Bubble.swift */; };
+		32EF76DD1D91884B0055DF35 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76DC1D91884B0055DF35 /* Shell.swift */; };
+		32EF76DF1D91884F0055DF35 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76DE1D91884F0055DF35 /* Merge.swift */; };
+		32EF76E11D9188520055DF35 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76E01D9188520055DF35 /* Heap.swift */; };
+		32EF76E31D9188570055DF35 /* Quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76E21D9188570055DF35 /* Quick.swift */; };
+		32EF76E51D9188600055DF35 /* Quick3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF76E41D9188600055DF35 /* Quick3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		32D3DAB61D91846C00FFB188 /* sortingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sortingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D3DABB1D91846C00FFB188 /* sortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortingTests.swift; sourceTree = "<group>"; };
 		32D3DABD1D91846C00FFB188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EF76D61D9188360055DF35 /* Insertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insertion.swift; sourceTree = "<group>"; };
+		32EF76D81D91883D0055DF35 /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		32EF76DA1D9188460055DF35 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		32EF76DC1D91884B0055DF35 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		32EF76DE1D91884F0055DF35 /* Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		32EF76E01D9188520055DF35 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		32EF76E21D9188570055DF35 /* Quick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quick.swift; sourceTree = "<group>"; };
+		32EF76E41D9188600055DF35 /* Quick3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quick3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,14 @@
 			children = (
 				32D3DAB01D91846B00FFB188 /* sorting.h */,
 				32D3DAB11D91846B00FFB188 /* Info.plist */,
+				32EF76D61D9188360055DF35 /* Insertion.swift */,
+				32EF76D81D91883D0055DF35 /* Selection.swift */,
+				32EF76DA1D9188460055DF35 /* Bubble.swift */,
+				32EF76DC1D91884B0055DF35 /* Shell.swift */,
+				32EF76DE1D91884F0055DF35 /* Merge.swift */,
+				32EF76E01D9188520055DF35 /* Heap.swift */,
+				32EF76E21D9188570055DF35 /* Quick.swift */,
+				32EF76E41D9188600055DF35 /* Quick3.swift */,
 			);
 			path = sorting;
 			sourceTree = "<group>";
@@ -149,6 +173,7 @@
 					32D3DAAC1D91846B00FFB188 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = K3S3BWK3L4;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					32D3DAB51D91846C00FFB188 = {
@@ -198,6 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EF76DF1D91884F0055DF35 /* Merge.swift in Sources */,
+				32EF76D91D91883D0055DF35 /* Selection.swift in Sources */,
+				32EF76DB1D9188460055DF35 /* Bubble.swift in Sources */,
+				32EF76E31D9188570055DF35 /* Quick.swift in Sources */,
+				32EF76E11D9188520055DF35 /* Heap.swift in Sources */,
+				32EF76DD1D91884B0055DF35 /* Shell.swift in Sources */,
+				32EF76D71D9188360055DF35 /* Insertion.swift in Sources */,
+				32EF76E51D9188600055DF35 /* Quick3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +355,7 @@
 		32D3DAC21D91846C00FFB188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K3S3BWK3L4;
@@ -334,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.buttonsandlights.sorting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +376,7 @@
 		32D3DAC31D91846C00FFB188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K3S3BWK3L4;
@@ -360,6 +396,7 @@
 		32D3DAC51D91846C00FFB188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K3S3BWK3L4;
 				INFOPLIST_FILE = sortingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +409,7 @@
 		32D3DAC61D91846C00FFB188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K3S3BWK3L4;
 				INFOPLIST_FILE = sortingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +438,7 @@
 				32D3DAC31D91846C00FFB188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32D3DAC41D91846C00FFB188 /* Build configuration list for PBXNativeTarget "sortingTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +447,7 @@
 				32D3DAC61D91846C00FFB188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
