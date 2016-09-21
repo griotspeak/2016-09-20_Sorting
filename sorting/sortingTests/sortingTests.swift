@@ -7,30 +7,55 @@
 //
 
 import XCTest
-@testable import sorting
+import sorting
 
 class sortingTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testBubbleSort() {
+        var case1 = [8, 6, 7, 5, 3, 0, 9]
+        var case2 = [8, 5, 3, 2, 6, 9, 1]
+        var case3: [Int] = []
+        var case4 = [9001]
+        var case5 = [3, 1]
+
+        bubbleSort(&case1)
+        bubbleSort(&case2)
+        bubbleSort(&case3)
+        bubbleSort(&case4)
+        bubbleSort(&case5)
+
+        let expected1 = case1.sorted(by: <)
+        let expected2 = case2.sorted(by: <)
+        let expected3 = case3.sorted(by: <)
+        let expected4 = case4.sorted(by: <)
+        let expected5 = case5.sorted(by: <)
+
+        XCTAssertEqual(case1, expected1)
+        XCTAssertEqual(case2, expected2)
+        XCTAssertEqual(case3, expected3)
+        XCTAssertEqual(case4, expected4)
+        XCTAssertEqual(case5, expected5)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testSwapIfOutOfOrder_wasOrdered() {
+        var source:[Int] = [3, 4]
+        let result = swapIfOutOfOrder(itemsAt: 0, and: 1, in: &source)
+        XCTAssertEqual(result, false)
+        XCTAssertEqual(source, [3, 4])
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testSwapIfOutOfOrder_wasOutOfOrder() {
+        var source:[Int] = [100, 4]
+        let result = swapIfOutOfOrder(itemsAt: 0, and: 1, in: &source)
+        XCTAssertEqual(result, true)
+        XCTAssertEqual(source, [4, 100])
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testSwapIfOutOfOrder_same() {
+        var source:[Int] = [3, 3]
+        let result = swapIfOutOfOrder(itemsAt: 0, and: 1, in: &source)
+        XCTAssertEqual(result, false)
+        XCTAssertEqual(source, [3, 3])
     }
-    
 }
+
+
